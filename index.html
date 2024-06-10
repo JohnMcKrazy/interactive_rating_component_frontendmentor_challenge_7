@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+        <title>Frontend Mentor | Interactive rating component</title>
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+        <!-- GOOGLE FONTS -->
+        <script type="module" charset="utf-8" src="./index.js"></script>
+
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <!-- Rating state start -->
+        <article>
+            <div class="section section_active">
+                <div class="option" data-value="star">
+                    <div class="icon_container">
+                        <svg class="star_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <path
+                                d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+                            />
+                        </svg>
+                    </div>
+                </div>
+                <h1>How did we do?</h1>
+                <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+                <form>
+                    <div class="control">
+                        <label class="option" for="option_1" data-value="1">
+                            <input type="checkbox" name="rating" value="1" id="option_1" />
+                            1
+                        </label>
+                        <label class="option" for="option_2" data-value="2">
+                            <input type="checkbox" name="rating" value="2" id="option_2" />
+                            2
+                        </label>
+                        <label class="option" for="option_3" data-value="3">
+                            <input type="checkbox" name="rating" value="3" id="option_3" />
+                            3
+                        </label>
+                        <label class="option" for="option_4" data-value="4">
+                            <input type="checkbox" name="rating" value="4" id="option_4" />
+                            4
+                        </label>
+                        <label class="option" for="option_5" data-value="5">
+                            <input type="checkbox" name="rating" value="5" id="option_5" />
+                            5
+                        </label>
+                    </div>
+                    <button type="submit" class=""><span class="label_btn">Submit</span></button>
+                </form>
+                <div class="msg hide">
+                    <h2>Por favor selecciona una opcion para continuar</h2>
+                </div>
+            </div>
+            <div class="section thanks">
+                <picture>
+                    <img src="./images/illustration-thank-you.svg" alt="Thank You image" />
+                </picture>
+                <div class="flag_container">
+                    <span class="flag">You selected <span class="selected"></span> of 5</span>
+                </div>
+                <div>
+                    <h2>Thank You!</h2>
+                    <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+                </div>
+            </div>
+        </article>
+        <div class="attribution">
+            <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/JohnMcKrazy" target="_blank">Jonathan Grajeda</a>.</p>
+        </div>
+    </body>
+</html>
