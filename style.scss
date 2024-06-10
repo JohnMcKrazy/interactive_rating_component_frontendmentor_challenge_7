@@ -87,6 +87,7 @@ INPUT[type="checkbox"] {
 BUTTON {
     padding: 0;
     background: var(--White);
+    color: var(--VeryDarkBlue);
     padding: 1rem 0;
     margin-top: 2rem;
     width: 100%;
@@ -96,6 +97,10 @@ BUTTON {
     cursor: pointer;
 
     &:hover {
+        background: var(--Orange);
+        color: var(--White);
+    }
+    &:active {
         filter: brightness(75%);
     }
 }
